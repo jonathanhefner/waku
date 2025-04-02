@@ -140,6 +140,7 @@ export function deployVercelPlugin(opts: {
           );
         }
         const vcConfigJson = {
+          runtime: 'nodejs',
           handler: `${opts.distDir}/${SERVE_JS}`,
           launcherType: 'Nodejs',
         };
